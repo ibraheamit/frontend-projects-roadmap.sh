@@ -1,8 +1,8 @@
-# 🧾 Single-Page CV (HTML Only) - Training Project from roadmap.sh
+# 🧾 Single-Page CV (HTML Only)
 
-This is a **training project** as part of the [roadmap.sh/frontend](https://roadmap.sh/projects/single-page-cv) learning path, specifically under the _"Single-Page CV"_ module.
+This is a training project as part of the [roadmap.sh/frontend](https://roadmap.sh/frontend) learning path, specifically under the **"Single-Page CV"** module.
 
-The goal of this project was to build a professional-looking **single-page resume** using only semantic HTML and best practices for SEO and accessibility.
+The goal of this project was to build a professional-looking single-page resume using only semantic HTML and best practices for SEO and accessibility.
 
 ---
 
@@ -18,7 +18,7 @@ The goal of this project was to build a professional-looking **single-page resum
 
 ## 📄 Project Features
 
-- 🏷️ SEO Meta Tags (title, description, keywords, author)
+- 🏷️ SEO Meta Tags (`title`, `description`, `keywords`, `author`)
 - 🌐 Open Graph (OG) & Twitter Card Tags
 - 🌟 Semantic structure using `<header>`, `<main>`, `<section>`, `<article>`, `<footer>`
 - 📎 Favicon support
@@ -28,14 +28,15 @@ The goal of this project was to build a professional-looking **single-page resum
 
 ## 🖥️ Live Demo
 
-🔗 [View the CV Online](https://ibraheamit.github.io/RoadProj-Single-Page-CV/)
+🔗 [View the CV Online](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/single-page-cv/)
 
 ---
 
 ## 📁 How to Use / Run
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ibraheamit/RoadProj-Single-Page-CV.git
-   cd single-page-cv
-   ```
+Clone the repository:
+
+```bash
+git clone https://github.com/ibraheamit/frontend-projects-roadmap.sh.git
+cd frontend-projects-roadmap.sh/projects/single-page-cv
+```

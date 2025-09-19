@@ -1,0 +1,163 @@
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .cv-container {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-icon {
+    font-size: 30px;
+  }
+
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .header-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header-nav a,
+  .header-nav span {
+    font-size: 14px;
+    margin: 3px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table,
+  table td,
+  table th {
+    border: none !important;
+  }
+
+  table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  table td div {
+    border-bottom: 2px solid #000;
+  }
+
+  /* Adjust project section */
+  .cv-container h2,
+  .cv-container h3 {
+    text-align: center;
+  }
+
+  /* Stack the sections */
+  .cv-container table {
+    display: block;
+    width: 100%;
+  }
+
+  .cv-container table td {
+    margin: 0 0 0px 0;
+  }
+
+  .cv-container table tr {
+    display: block;
+  }
+
+  .cv-container table tr td {
+    width: 100%;
+  }
+
+  /* Adjust the reviews section */
+  .cv-container table td div.project-item {
+    padding: 10px;
+    background-color: rgb(243, 240, 240);
+    text-align: center;
+  }
+
+  .cv-container table td div p {
+    font-size: 16px;
+  }
+
+  .hero-section {
+    margin: 10px;
+  }
+
+  /* Reduce font size for mobile */
+  .hero-section h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+
+  .cv-container table td div.line {
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+
+  .projects {
+    padding: 0px;
+  }
+
+  .work-experience {
+    padding: 0px;
+  }
+
+  .education {
+    padding: 0px;
+  }
+
+  .work-experience h3,
+  .work-experience p,
+  .work-experience a,
+  .education h3,
+  .education p,
+  .education a {
+    padding-left: 10px;
+  }
+
+  .work-experience div {
+    background-color: rgb(243, 240, 240);
+  }
+}

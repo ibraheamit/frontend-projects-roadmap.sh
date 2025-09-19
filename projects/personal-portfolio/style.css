@@ -1,0 +1,122 @@
+body {
+  font-family: cursive;
+  line-height: 1.4;
+  color: #000;
+  background-color: #f8f8f8;
+  padding: 30px;
+}
+
+.cv-container {
+  background-color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  border: 2px solid #000;
+  box-shadow: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  flex: 1;
+  text-align: left;
+}
+
+.logo-icon {
+  color: black;
+  font-size: 20px;
+}
+
+.header-nav {
+  display: flex;
+  flex: 2;
+  justify-content: flex-end;
+  gap: 10px;
+  text-align: right;
+}
+
+.header-nav a,
+.header-nav span {
+  font-size: 16px;
+}
+
+.hero-section {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero-section p {
+  color: #666;
+  margin: 10px 0 0 0;
+}
+
+.main-content-table {
+  width: 100%;
+  border: 2px solid #000;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+}
+
+.projects h2,
+.work-experience h2,
+.education h2 {
+  font-size: 24px;
+}
+
+.projects .project-item,
+.work-experience p,
+.education p {
+  font-size: 16px;
+}
+
+a {
+  font-size: 16px;
+  color: rgb(67, 67, 73);
+  text-decoration: none;
+}
+
+.proj-link a {
+  color: rgba(0, 0, 255, 0.658);
+}
+
+/* Review section */
+.review-box {
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.review-author {
+  font-weight: bold;
+}
+
+.review-role {
+  color: #999;
+  font-size: 14px;
+}
+
+.footer {
+  text-align: center;
+  margin: 60px 0 20px 0;
+}
+
+.footer p {
+  margin: 0;
+}

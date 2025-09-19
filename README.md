@@ -11,6 +11,7 @@ Each project includes a preview, source code, and a live demo hosted on **GitHub
 | -------------------------------------------------------------------- | --------------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | [Single-Page CV](https://roadmap.sh/projects/single-page-cv)         | ![Preview](projects/single-page-cv/preview.png)     | [View Code](projects/single-page-cv/)     | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/single-page-cv/)     |
 | [Basic HTML Website](https://roadmap.sh/projects/basic-html-website) | ![Preview](projects/basic-html-website/preview.png) | [View Code](projects/basic-html-website/) | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/basic-html-website/) |
+| [Personal Portfolio](https://roadmap.sh/projects/personal-portfolio) | ![Preview](projects/personal-portfolio/preview.png) | [View Code](projects/personal-portfolio/) | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/personal-portfolio/) |
 
 ---
 

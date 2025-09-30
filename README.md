@@ -14,6 +14,7 @@ Each project includes a preview, source code, and a live demo hosted on **GitHub
 | [Personal Portfolio](https://roadmap.sh/projects/portfolio-website)    | ![Preview](projects/personal-portfolio/preview.png)  | [View Code](projects/personal-portfolio/)  | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/personal-portfolio/)  |
 | [Changelog Component](https://roadmap.sh/projects/changelog-component) | ![Preview](projects/changelog-component/preview.png) | [View Code](projects/changelog-component/) | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/changelog-component/) |
 | [Testimonial Cards](https://roadmap.sh/projects/testimonial-cards)     | ![Preview](projects/testimonial-cards/preview.png)   | [View Code](projects/testimonial-cards/)   | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/testimonial-cards/)   |
+| [Datepicker UI](https://roadmap.sh/projects/datepicker-ui)             | ![Preview](projects/datepicker-ui/preview.png)       | [View Code](projects/datepicker-ui/)       | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/datepicker-ui/)       |
 
 ---
 

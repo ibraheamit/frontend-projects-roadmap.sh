@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Profile Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="form-container">
+        <section class="form-section">
+            <h1>Update Profile</h1>
+
+            <form novalidate aria-describedby="form-instructions">
+                <div id="form-instructions" class="sr-only">
+                    Complete all required fields to update your profile. Use Tab to navigate between fields.
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="What should we call you?"
+                        aria-required="true" aria-describedby="fullName-help">
+                    <div id="fullName-help" class="sr-only">
+                        Enter your full name as you would like it to appear on your profile
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="john@doe.com" aria-required="true"
+                        aria-invalid="true" aria-describedby="email-error" class="error-field">
+                    <div id="email-error" class="error-message" role="alert">
+                        <span aria-hidden="true">⚠</span>
+                        Email is already taken
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Enter Password</label>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" placeholder="xxxxxxxxx"
+                            aria-required="true" aria-describedby="password-help" class="password-field">
+                        <svg class="password-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div id="password-help" class="sr-only">
+                        Password must be at least 8 characters long
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="input-container">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="xxxxxxxxx"
+                            aria-required="true" aria-describedby="confirmPassword-help" class="password-field">
+                        <svg class="password-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" aria-hidden="true">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div id="confirmPassword-help" class="sr-only">
+                        Re-enter your password to confirm it matches
+                    </div>
+                </div>
+
+                <button type="submit" class="update-button">
+                    Update Profile
+                </button>
+            </form>
+        </section>
+
+        <aside class="progress-section" aria-labelledby="progress-title">
+            <div class="progress-header">
+                <div class="progress-circle" role="img" aria-label="Profile completion progress: 65 percent complete">
+                    <span class="progress-text">65%</span>
+                </div>
+                <h2 id="progress-title" class="progress-label">Profile Completeness</h2>
+            </div>
+
+            <ul class="checklist" role="list" aria-label="Profile completion checklist">
+                <li class="checklist-item completed" role="listitem">
+                    <span>Create Account</span>
+                </li>
+                <li class="checklist-item completed" role="listitem">
+                    <span>Update Roadmap Progress</span>
+                </li>
+                <li class="checklist-item completed" role="listitem">
+                    <span>Setup Public Profile</span>
+                </li>
+                <li class="checklist-item" role="listitem">
+                    <span>Complete your first project</span>
+                </li>
+                <li class="checklist-item" role="listitem">
+                    <span>Invite your Friends</span>
+                </li>
+            </ul>
+        </aside>
+    </main>
+</body>
+
+</html>

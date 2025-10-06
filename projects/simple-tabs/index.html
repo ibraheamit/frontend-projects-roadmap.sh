@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tabs-container">
+        <div class="tabs-nav">
+            <button class="tab-button active" data-tab="first">First Tab</button>
+            <button class="tab-button" data-tab="second">Second Tab</button>
+            <button class="tab-button" data-tab="third">Third Tab</button>
+            <button class="tab-button" data-tab="fourth">Fourth Tab</button>
+        </div>
+
+        <div class="tab-content active" id="first">
+            <div class="content-box">
+                First Tab content to be displayed here.
+            </div>
+            <div class="additional-content">
+                <h2>Welcome to the First Tab</h2>
+                <p>This is the default active tab. Here you can display your primary content, introductory information,
+                    or main features of your application.</p>
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <h3>Easy Navigation</h3>
+                        <p>Switch between tabs with smooth transitions and clear visual feedback.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Responsive Design</h3>
+                        <p>Works perfectly on desktop, tablet, and mobile devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="second">
+            <div class="content-box">
+                Second Tab content to be displayed here.
+            </div>
+            <div class="additional-content">
+                <h2>Second Tab Features</h2>
+                <p>This tab demonstrates how content changes when switching tabs. Each tab can contain completely
+                    different content and layouts.</p>
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <h3>Dynamic Content</h3>
+                        <p>Each tab can display unique content, images, forms, or any other elements.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Smooth Animations</h3>
+                        <p>Content appears with subtle fade-in animations for better user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="third">
+            <div class="content-box">
+                Third Tab content to be displayed here.
+            </div>
+            <div class="additional-content">
+                <h2>Third Tab Information</h2>
+                <p>The third tab showcases additional functionality. You can add forms, tables, charts, or any
+                    interactive elements here.</p>
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <h3>Interactive Elements</h3>
+                        <p>Add buttons, forms, input fields, or any interactive components.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Custom Styling</h3>
+                        <p>Each tab can have its own unique styling and color scheme.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="fourth">
+            <div class="content-box">
+                Fourth Tab content to be displayed here.
+            </div>
+            <div class="additional-content">
+                <h2>Fourth Tab Details</h2>
+                <p>The final tab completes our tabs component. This demonstrates the scalability of the solution - you
+                    can easily add more tabs by following the same pattern.</p>
+                <div class="feature-list">
+                    <div class="feature-card">
+                        <h3>Scalable Solution</h3>
+                        <p>Add as many tabs as needed by following the established pattern.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Clean Code</h3>
+                        <p>Well-structured HTML, CSS, and JavaScript for easy maintenance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

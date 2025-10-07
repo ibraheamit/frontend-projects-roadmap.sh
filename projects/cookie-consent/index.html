@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Consent Banner Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <h1>🍪 Cookie Consent Demo</h1>
+        <p>This is a demonstration page for the cookie consent banner. The banner will appear automatically when you
+            first visit the page and remember your choice for future visits.</p>
+
+        <button class="demo-button" onclick="showBanner()">Show Cookie Banner</button>
+        <button class="demo-button" onclick="resetConsent()">Reset Consent</button>
+
+        <div class="status none" id="status">
+            No consent given yet
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>🍪 We use cookies</h3>
+                <p>
+                    This website uses cookies to enhance your browsing experience and provide personalized content.
+                    By continuing to use this site, you consent to our use of cookies.
+                    <a href="#" onclick="event.preventDefault(); alert('Privacy policy would be here!');">
+                        Learn more about our privacy policy
+                    </a>
+                </p>
+            </div>
+            <div class="cookie-actions">
+                <button class="cookie-btn decline" onclick="declineCookies()">
+                    Decline
+                </button>
+                <button class="cookie-btn accept" onclick="acceptCookies()">
+                    Accept All
+                </button>
+                <button class="cookie-btn close" onclick="closeBanner()" title="Close banner">
+                    ×
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

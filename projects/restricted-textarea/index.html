@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restricted Textarea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Write your Message</h1>
+
+        <div class="textarea-container">
+            <textarea class="textarea" id="messageTextarea" placeholder="Start typing ..." maxlength="250"></textarea>
+            <div class="character-count" id="characterCount">0 / 250</div>
+        </div>
+
+        <div class="limit-message" id="limitMessage">
+            You've reached the maximum character limit of 250 characters.
+        </div>
+
+        <div class="description">
+            <strong>Instructions:</strong><br>
+            • Type in the textarea above to see the live character count<br>
+            • The counter updates in real-time as you type<br>
+            • When you reach 250 characters, the border turns red and further input is prevented<br>
+            • You can delete characters to continue typing
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

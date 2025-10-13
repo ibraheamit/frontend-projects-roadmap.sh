@@ -21,6 +21,7 @@ Each project includes a preview, source code, and a live demo hosted on **GitHub
 | [Tabs](https://roadmap.sh/projects/simple-tabs)                        | ![Preview](projects/simple-tabs/preview.png)         | [View Code](projects/simple-tabs/)         | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/simple-tabs/)         |
 | [Cookie Consent](https://roadmap.sh/projects/cookie-consent)           | ![Preview](projects/cookie-consent/preview.png)      | [View Code](projects/cookie-consent/)      | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/cookie-consent/)      |
 | [Restricted Textarea](https://roadmap.sh/projects/restricted-textarea) | ![Preview](projects/restricted-textarea/preview.png) | [View Code](projects/restricted-textarea/) | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/restricted-textarea/) |
+| [Accordion](https://roadmap.sh/projects/accordion)                     | ![Preview](projects/accordion/preview.png)           | [View Code](projects/accordion/)           | [Live Demo](https://ibraheamit.github.io/frontend-projects-roadmap.sh/projects/accordion/)           |
 
 ---
 

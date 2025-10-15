@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #969c99 0%, #076439 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 25px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+  padding: 50px 40px;
+  max-width: 550px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+h1 {
+  text-align: center;
+  background: linear-gradient(135deg, #034228 0%, #3cb364 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 35px;
+  font-size: 1rem;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  color: #444;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 18px 20px;
+  padding-right: 50px;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ea6666;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.calendar-icon {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ea6666;
+  pointer-events: none;
+  font-size: 1.3rem;
+}
+
+button {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #a7e0ca 0%, #358372 100%);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.5s;
+}
+
+button:hover::before {
+  left: 100%;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(102, 234, 205, 0.5);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+.result {
+  margin-top: 35px;
+  padding: 30px;
+  background: linear-gradient(135deg, #66eabe 0%, #4ba285 100%);
+  border-radius: 20px;
+  text-align: center;
+  display: none;
+  animation: slideIn 0.6s ease;
+  box-shadow: 0 10px 30px rgba(102, 234, 194, 0.4);
+}
+
+.result.show {
+  display: block;
+}
+
+.result h2 {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+.age-details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.age-box {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  min-width: 100px;
+  animation: fadeIn 0.8s ease;
+}
+
+.age-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  display: block;
+}
+
+.age-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.total-days {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1.1rem;
+}
+
+.total-days strong {
+  font-size: 1.4rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.error {
+  color: #f5576c;
+  font-size: 0.95rem;
+  margin-top: 10px;
+  display: none;
+  padding: 10px;
+  background: rgba(245, 87, 108, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #f5576c;
+}
+
+.error.show {
+  display: block;
+  animation: shake 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 40px 25px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .age-box {
+    min-width: 80px;
+  }
+
+  .age-number {
+    font-size: 2rem;
+  }
+}
